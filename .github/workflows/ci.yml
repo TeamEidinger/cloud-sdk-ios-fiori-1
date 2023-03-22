@@ -14,10 +14,10 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-11, macos-12]
-        xcode: ['Xcode_13.0', 'Xcode_14.0']
+        xcode: ['Xcode_13.0', 'Xcode_14.2']
         exclude:
           - os: macos-11
-            xcode: 'Xcode_14.0'
+            xcode: 'Xcode_14.2'
           - os: macos-12
             xcode: 'Xcode_13.0'     
     runs-on: ${{ matrix.os }}         
